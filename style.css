@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f4;
+}
+
+.wrapper {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: #333333;
+}
+
+p {
+  color: #666666;
+}
+
+.result {
+  max-width: 100%;
+  background-color: rgb(247, 202, 201, 0.45);
+  border: solid 0px #6091d3; /*線*/
+  border-radius: 10px; /*角の丸み*/
+  /*   margin: 15px 0px;
+  padding: 3px 5px; */
+  box-shadow: 8px 8px 16px #b1b1b1, -8px -8px 16px #ffffff;
+}
+
+.result-red {
+  max-width: 100%;
+  background-color: rgb(231, 33, 33, 0.25);
+  border: solid 0px #6091d3; /*線*/
+  border-radius: 10px; /*角の丸み*/
+  /*   margin: 15px 0px;
+  padding: 3px 5px; */
+  box-shadow: 8px 8px 16px #b1b1b1, -8px -8px 16px #ffffff;
+}
+
+.result-blue {
+  max-width: 100%;
+  background-color: rgb(85, 190, 238, 0.25);
+  border: solid 0px #6091d3; /*線*/
+  border-radius: 10px; /*角の丸み*/
+  box-shadow: 8px 8px 16px #b1b1b1, -8px -8px 16px #ffffff;
+}
+
+.color-red {
+  color: red;
+}
+
+.color-black {
+  color: black;
+}
+
+/*mercari page*/
+.moko {
+  border-radius: 35px;
+  background: #f2f2f2;
+  box-shadow: 8px 8px 16px #b1b1b1, -8px -8px 16px #ffffff;
+}
+
+.bg01 {
+  background: #f2f2f2;
+}
+
+/* icons */
+.content-center {
+  /*     height:100vh; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: ;
+}
+
+.content-center ul {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+  margin: 5px 0;
+}
+
+/* Add more styles as needed */
+
+@media screen and (max-width: 480px) {
+  /* Styles specific to screens with a maximum width of 480px (typical smartphones) */
+  #wrapper {
+    padding: 10px;
+  }
+}

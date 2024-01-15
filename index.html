@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- 
+      This is an HTML comment
+      You can write text in a comment and the content won't be visible in the page
+    -->
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+
+    <!--
+      This is the page head - it contains info the browser uses
+      Like the title, which appears on the browser tab but not inside the page
+      Further down you'll see the content that displays in the page
+    -->
+    <title>マツキヨ電卓</title>
+
+    <!-- The website stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- The website JavaScript file -->
+    <script src="/script.js" defer></script>
+
+    <!--     bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <!--     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script> -->
+  </head>
+  <body>
+    <!--
+      The body includes the content you see in the page
+      Each element is defined using tags, like this <div></div>
+      The attributes like class="wrapper" let us style elements in the CSS
+    -->
+    <div class="container-fluid p-5 bg01">
+      <div class="row">
+        <div class="container p-4 moko">
+          <div>
+            <h1>マツキヨ電卓</h1>
+            <p>マツキヨの割引とポイント還元率を使って実質購入額を計算します。</p>
+          </div>
+
+          <div>
+            <p class="mt-3 mb-1">価格</p>
+            <input type="tel" id="kakaku" name="kakakuNumber" class="form-control"/>
+            <!-- input typeをtelにしたほうがいいのかも -->
+            <p class="mt-3 mb-1">割引％</p>
+            <input type="tel" id="waribiki" name="waribikiNumber" value="10" class="form-control"/>
+            <p class="mt-3 mb-1">ポイント還元%</p>
+            <input type="tel" id="point" name="pointNumber" value="17.5" class="form-control"/>
+            <p class="mt-3 mb-1">メモ（商品名とか入れてね、空欄でも可）</p>
+            <input type="text" id="memo" name="memoStr" class="form-control"/>
+            <p></p>
+            <input type="submit" value="計算✔" onclick="calculateResult();" />
+          </div>
+          <div id="display"></div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid p-5 bg01">
+      <div class="container">
+        <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link disabled">x</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="mercari-dentaku.html"
+              >メルカリ利益計算</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">x</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- The footer holds our remix button — you can keep or delete it ✂ -->
+  </body>
+</html>
